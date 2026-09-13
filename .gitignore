@@ -1,9 +1,5 @@
-# Large image frames & media assets
-*.jpg
-*.jpeg
-ezgif-4bb4f0488ebc4c9a-jpg/
-
-# Environment & Dependencies
+# Environment & Build Output
 node_modules/
 .DS_Store
 Thumbs.db
+*.log
