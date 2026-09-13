@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Shifa M — Software Engineer & Systems Builder</title>
+  <meta name="description" content="Personal engineering portfolio of Shifa M. CS student at BITS Pilani specializing in backend systems, database internals, distributed architecture, and AI engineering tools." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=6" />
+</head>
+<body>
+  <!-- Fixed Background Canvas for 60FPS Scroll Animation -->
+  <canvas id="animation-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="header">
+    <div class="header-container">
+      <a href="#hero" class="logo">SHIFA M</a>
+      
+      <nav class="nav-links">
+        <a href="#hero" class="nav-link active">HOME</a>
+        <a href="#what-i-build" class="nav-link">WORK</a>
+        <a href="#stack" class="nav-link">STACK</a>
+        <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+        <a href="https://github.com/Ctrl-apk" target="_blank" rel="noopener" class="nav-link">GITHUB ↗</a>
+      </nav>
+
+      <a href="#contact" class="btn-pill-white">
+        <span>Get in touch</span>
+        <span class="btn-arrow-circle">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M2.5 6H9.5M9.5 6L6 2.5M9.5 6L6 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Scroll Content Wrapper -->
+  <main class="content-wrapper">
+    <!-- HERO SECTION (Transparent Overlay directly over Canvas Animation) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-top-grid">
+        <div class="hero-left">
+          <p class="hero-subtitle">Software Engineer / Systems Builder</p>
+          <h1 class="hero-title">SHIFA M</h1>
+        </div>
+        <div class="hero-right">
+          <h2 class="hero-statement">Building systems. Breaking them. Understanding why.</h2>
+          <p class="hero-description">I build backend systems, database engines, distributed services, and AI-powered engineering tools.</p>
+        </div>
+      </div>
+
+      <!-- Hero Identity Pillars Bar -->
+      <div class="hero-services-grid">
+        <div class="service-item">
+          <span class="service-num">#01</span>
+          <span class="service-name">Backend Engineering</span>
+        </div>
+        <div class="service-item">
+          <span class="service-num">#02</span>
+          <span class="service-name">Database Internals</span>
+        </div>
+        <div class="service-item">
+          <span class="service-num">#03</span>
+          <span class="service-name">Distributed Systems</span>
+        </div>
+        <div class="service-item">
+          <span class="service-num">#04</span>
+          <span class="service-name">AI Engineering</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOWER CONTENT WRAPPER -->
+    <div class="curved-content-container">
+      <!-- EDUCATION & CREDENTIALS STRIP -->
+      <section class="brands-section">
+        <div class="brands-inner">
+          <span class="brands-heading">Education &<br />Verified Credentials</span>
+          
+          <div class="brands-logo-row">
+            <div class="brand-item">
+              <span class="tech-badge">BITS PILANI</span>
+              <span class="brand-name">B.Sc. (Hons) CS • CGPA 8.23</span>
+            </div>
+
+            <div class="brand-item">
+              <span class="tech-badge">OPEN SOURCE</span>
+              <span class="brand-name">GSSoC & Hacktoberfest</span>
+            </div>
+
+            <div class="brand-item">
+              <span class="tech-badge">HACKATHON</span>
+              <span class="brand-name">EY Hackathon Level 2</span>
+            </div>
+
+            <div class="brand-item">
+              <span class="tech-badge">LEETCODE</span>
+              <span class="brand-name">170+ Problems Solved</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 01: WHAT I BUILD -->
+      <section id="what-i-build" class="about-section">
+        <div class="about-grid">
+          <div class="about-left">
+            <span class="section-tag">Engineering Focus</span>
+            <h2 class="about-headline">WHAT I BUILD</h2>
+          </div>
+
+          <div class="about-right">
+            <div class="build-categories-grid">
+              <div class="build-cat-card">
+                <span class="cat-num">01</span>
+                <h3 class="cat-title">BACKEND SYSTEMS</h3>
+                <p class="cat-desc">APIs, services, asynchronous processing, and production-oriented backend architecture.</p>
+              </div>
+
+              <div class="build-cat-card">
+                <span class="cat-num">02</span>
+                <h3 class="cat-title">DATABASES</h3>
+                <p class="cat-desc">Storage engines, indexing, transactions, logging, recovery, and query execution.</p>
+              </div>
+
+              <div class="build-cat-card">
+                <span class="cat-num">03</span>
+                <h3 class="cat-title">DISTRIBUTED SYSTEMS</h3>
+                <p class="cat-desc">Caching, consistent hashing, request distribution, and scalable service architecture.</p>
+              </div>
+
+              <div class="build-cat-card">
+                <span class="cat-num">04</span>
+                <h3 class="cat-title">AI ENGINEERING</h3>
+                <p class="cat-desc">LLM-powered investigation, RAG, structured reasoning, and developer tools.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 02: ENGINEERING STACK -->
+      <section id="stack" class="stack-section">
+        <div class="stack-container">
+          <div class="badge-pill">
+            <span class="dot-blue">●</span> TECHNICAL STACK
+          </div>
+          <h2 class="section-title-large stack-heading">
+            Core Technical Stack & Engineering Foundations
+          </h2>
+
+          <div class="stack-groups-grid">
+            <div class="stack-group-card">
+              <span class="group-label">LANGUAGES</span>
+              <div class="stack-pills-row">
+                <span class="stack-pill-item">Java</span>
+                <span class="stack-pill-item">Python</span>
+                <span class="stack-pill-item">JavaScript</span>
+                <span class="stack-pill-item">TypeScript</span>
+                <span class="stack-pill-item">SQL</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card">
+              <span class="group-label">BACKEND</span>
+              <div class="stack-pills-row">
+                <span class="stack-pill-item">Spring Boot</span>
+                <span class="stack-pill-item">FastAPI</span>
+                <span class="stack-pill-item">Node.js</span>
+                <span class="stack-pill-item">React</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card">
+              <span class="group-label">DATABASES</span>
+              <div class="stack-pills-row">
+                <span class="stack-pill-item">PostgreSQL</span>
+                <span class="stack-pill-item">MongoDB</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card">
+              <span class="group-label">INFRASTRUCTURE</span>
+              <div class="stack-pills-row">
+                <span class="stack-pill-item">Docker</span>
+                <span class="stack-pill-item">Prometheus</span>
+                <span class="stack-pill-item">Grafana</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card">
+              <span class="group-label">AI / ML</span>
+              <div class="stack-pills-row">
+                <span class="stack-pill-item">LLM APIs</span>
+                <span class="stack-pill-item">RAG</span>
+                <span class="stack-pill-item">Gemini API</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card">
+              <span class="group-label">TOOLS</span>
+              <div class="stack-pills-row">
+                <span class="stack-pill-item">Git</span>
+                <span class="stack-pill-item">GitHub</span>
+                <span class="stack-pill-item">Maven</span>
+                <span class="stack-pill-item">Swagger / OpenAPI</span>
+                <span class="stack-pill-item">Postman</span>
+              </div>
+            </div>
+
+            <div class="stack-group-card full-width">
+              <span class="group-label">CORE CS FOUNDATIONS</span>
+              <div class="stack-pills-row">
+                <span class="stack-pill-item highlight">Data Structures & Algorithms</span>
+                <span class="stack-pill-item highlight">Object-Oriented Programming (OOP)</span>
+                <span class="stack-pill-item highlight">Database Management Systems (DBMS)</span>
+                <span class="stack-pill-item highlight">Operating Systems</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 03: PROJECTS (Engineering Case Studies) -->
+      <section id="projects" class="projects-section">
+        <div class="projects-container">
+          <div class="badge-pill">
+            <span class="dot-blue">●</span> ENGINEERING CASE STUDIES
+          </div>
+          <h2 class="section-title-large project-section-heading">Featured Systems Projects</h2>
+
+          <!-- PROJECT 01: FORGEDB -->
+          <article class="project-case-study main-featured">
+            <div class="case-study-header">
+              <div class="case-study-title-block">
+                <span class="case-num">PROJECT 01</span>
+                <h3 class="case-title">ForgeDB</h3>
+                <span class="case-subtitle">RELATIONAL DATABASE ENGINE FROM SCRATCH</span>
+              </div>
+              <div class="case-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Maven</span>
+                <span class="tech-tag">JUnit 5</span>
+                <span class="tech-tag">B+ Tree</span>
+                <span class="tech-tag">WAL</span>
+              </div>
+            </div>
+
+            <p class="case-desc">
+              "Built a relational database engine from scratch, implementing disk storage, buffer pool caching, B+ tree indexing, SQL parsing, query execution, and query planning."
+            </p>
+
+            <!-- Interactive Architecture Storytelling Stream -->
+            <div class="architecture-flow-narrative">
+              <span class="flow-step">Storage</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">Indexing</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">Transactions</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">Logging</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">Recovery</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step highlight-step">523 AUTOMATED TESTS</span>
+            </div>
+
+            <div class="case-details-grid">
+              <div class="case-detail-box">
+                <h4>Core Components</h4>
+                <ul>
+                  <li>Disk storage & Buffer pool page caching</li>
+                  <li>B+ tree index & SQL parser / executor</li>
+                  <li>Query optimization & cost-based planning</li>
+                </ul>
+              </div>
+
+              <div class="case-detail-box">
+                <h4>Transaction Model</h4>
+                <ul>
+                  <li>NO-STEAL / NO-FORCE / REDO-ONLY semantics</li>
+                  <li>Supports BEGIN, COMMIT, ROLLBACK</li>
+                  <li>ACID compliance guarantees</li>
+                </ul>
+              </div>
+
+              <div class="case-detail-box">
+                <h4>WAL & Crash Recovery</h4>
+                <ul>
+                  <li>Write-Ahead Logging with CRC32 & pageLSN</li>
+                  <li>Committed-transaction REDO algorithm</li>
+                  <li>Truncation-safe replay & B+ tree index rebuild</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="case-footer-metric">
+              <span class="metric-badge">VERIFIED TEST COVERAGE</span>
+              <span class="metric-val">523 AUTOMATED TESTS PASSING</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 02: SEARCH TYPEAHEAD SYSTEM -->
+          <article class="project-case-study">
+            <div class="case-study-header">
+              <div class="case-study-title-block">
+                <span class="case-num">PROJECT 02</span>
+                <h3 class="case-title">Search Typeahead System</h3>
+                <span class="case-subtitle">DISTRIBUTED SEARCH INFRASTRUCTURE</span>
+              </div>
+              <div class="case-tech-tags">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+
+            <p class="case-desc">
+              "Built a distributed search typeahead using consistent hashing across 3 cache nodes and 100 virtual nodes for balanced request distribution."
+            </p>
+
+            <!-- Architecture Diagram Stream -->
+            <div class="architecture-diagram-card">
+              <div class="arch-diagram-flow">
+                <div class="arch-node">CLIENT</div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-node highlight-ring">HASH RING (100 Virtual Nodes)</div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-nodes-group">
+                  <span class="cache-node">CACHE NODE 1</span>
+                  <span class="cache-node">CACHE NODE 2</span>
+                  <span class="cache-node">CACHE NODE 3</span>
+                </div>
+                <div class="arch-arrow">↓</div>
+                <div class="arch-node db-node">POSTGRESQL (Batched Writes)</div>
+              </div>
+            </div>
+
+            <div class="case-details-grid">
+              <div class="case-detail-box">
+                <h4>Engineering Highlights</h4>
+                <ul>
+                  <li>Consistent hashing across 3 cache nodes & 100 virtual nodes</li>
+                  <li>ConcurrentHashMap thread-safe state management</li>
+                  <li>Exponential recency-decay search ranking algorithm</li>
+                </ul>
+              </div>
+
+              <div class="case-detail-box">
+                <h4>Workload & Optimization</h4>
+                <ul>
+                  <li>Tested on 129K-query e-commerce workload</li>
+                  <li>Batched writes reduced DB write frequency by 10–50x</li>
+                  <li>PostgreSQL full-text indexing with Docker containerization</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="case-footer-metric">
+              <span class="metric-badge">PERFORMANCE TARGET</span>
+              <span class="metric-val">SUB-50MS PREFIX SEARCH RESPONSE TIME</span>
+            </div>
+          </article>
+
+          <!-- PROJECT 03: AI INCIDENT INVESTIGATOR -->
+          <article class="project-case-study">
+            <div class="case-study-header">
+              <div class="case-study-title-block">
+                <span class="case-num">PROJECT 03</span>
+                <h3 class="case-title">AI Incident Investigator</h3>
+                <span class="case-subtitle">AI-POWERED INCIDENT ROOT CAUSE ANALYSIS</span>
+              </div>
+              <div class="case-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">LLM API</span>
+                <span class="tech-tag">Prometheus</span>
+                <span class="tech-tag">Grafana</span>
+                <span class="tech-tag">Docker</span>
+              </div>
+            </div>
+
+            <p class="case-desc">
+              "Built a FastAPI backend that ingests Prometheus metrics, Grafana alert triggers, and system log traces across microservices to isolate incident failure points."
+            </p>
+
+            <!-- Causal Stream Visual -->
+            <div class="architecture-flow-narrative">
+              <span class="flow-step">INCIDENT</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">METRICS + ALERTS + LOGS</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">HYPOTHESIS ENGINE</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">EVIDENCE</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step">ROOT CAUSE</span>
+              <span class="flow-arrow">→</span>
+              <span class="flow-step highlight-step">REMEDIATION SUGGESTIONS</span>
+            </div>
+
+            <div class="case-details-grid">
+              <div class="case-detail-box">
+                <h4>Incident Correlation</h4>
+                <ul>
+                  <li>Ingests Prometheus metrics, Grafana alerts, & trace logs</li>
+                  <li>Async hypothesis evaluation & scenario scoring</li>
+                  <li>Generates structured JSON responses for incident rooms</li>
+                </ul>
+              </div>
+
+              <div class="case-detail-box">
+                <h4>System Architecture</h4>
+                <ul>
+                  <li>FastAPI asynchronous backend with PostgreSQL storage</li>
+                  <li>Confidence-scored root cause analysis algorithm</li>
+                  <li>Deployed via Docker Compose for easy environment setup</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- SECTION 04: ENGINEERING NUMBERS -->
+      <section id="numbers" class="stats-section">
+        <div class="stats-container">
+          <div class="badge-pill">
+            <span class="dot-blue">●</span> VERIFIED METRICS
+          </div>
+          <div class="stats-grid">
+            <div class="stat-col">
+              <div class="stat-top-line">
+                <span class="stat-top-label">FORGEDB ENGINE</span>
+              </div>
+              <div class="stat-number">523</div>
+              <p class="stat-desc">AUTOMATED TESTS PASSING</p>
+            </div>
+
+            <div class="stat-col">
+              <div class="stat-top-line">
+                <span class="stat-top-label">TYPEAHEAD INFRASTRUCTURE</span>
+              </div>
+              <div class="stat-number">3</div>
+              <p class="stat-desc">CACHE NODES</p>
+            </div>
+
+            <div class="stat-col">
+              <div class="stat-top-line">
+                <span class="stat-top-label">CONSISTENT HASHING</span>
+              </div>
+              <div class="stat-number">100</div>
+              <p class="stat-desc">VIRTUAL NODES</p>
+            </div>
+
+            <div class="stat-col">
+              <div class="stat-top-line">
+                <span class="stat-top-label">TYPEAHEAD DATASET</span>
+              </div>
+              <div class="stat-number">129K</div>
+              <p class="stat-desc">QUERY E-COMMERCE WORKLOAD</p>
+            </div>
+
+            <div class="stat-col">
+              <div class="stat-top-line">
+                <span class="stat-top-label">DB WRITE OPTIMIZATION</span>
+              </div>
+              <div class="stat-number">10–50x</div>
+              <p class="stat-desc">LOWER DB WRITE FREQUENCY VIA BATCHING</p>
+            </div>
+
+            <div class="stat-col">
+              <div class="stat-top-line">
+                <span class="stat-top-label">ALGORITHMIC PROBLEM SOLVING</span>
+              </div>
+              <div class="stat-number">170+</div>
+              <p class="stat-desc">PROBLEMS SOLVED ON LEETCODE</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 05: OPEN SOURCE -->
+      <section id="opensource" class="opensource-section">
+        <div class="opensource-container">
+          <div class="badge-pill">
+            <span class="dot-blue">●</span> COMMUNITY & OPEN SOURCE
+          </div>
+          <h2 class="section-title-large">OPEN SOURCE CONTRIBUTIONS</h2>
+
+          <div class="opensource-card">
+            <div class="os-header">
+              <div class="os-title-block">
+                <h3 class="os-role">Open Source Contributor</h3>
+                <span class="os-programs">GirlScript Summer of Code • Hacktoberfest 2024</span>
+              </div>
+            </div>
+            <ul class="os-list">
+              <li>Repository issue resolution & bug fixes in Java and Python codebases</li>
+              <li>Feature enhancements, pull request reviews, and automated unit test coverage</li>
+              <li>Collaborative Git & GitHub version control workflows</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 06 & 07: ACHIEVEMENTS & CURRENTLY BUILDING -->
+      <section class="double-section-grid">
+        <div class="double-container">
+          <!-- SECTION 06: ACHIEVEMENTS -->
+          <div id="achievements" class="achievements-col">
+            <div class="badge-pill">
+              <span class="dot-blue">●</span> RECOGNITION
+            </div>
+            <h3 class="sub-heading-title">VERIFIED ACHIEVEMENTS</h3>
+            <ul class="achievement-list">
+              <li>
+                <span class="achieve-bullet">🏆</span>
+                <span><strong>Shortlisted for Level 2 of the EY Hackathon</strong> after building an automated AI-driven backend solution.</span>
+              </li>
+              <li>
+                <span class="achieve-bullet">⚡</span>
+                <span><strong>Competed in 10+ national</strong> and open hackathons building backend prototypes.</span>
+              </li>
+              <li>
+                <span class="achieve-bullet">💻</span>
+                <span><strong>Solved 170+ algorithmic problems</strong> on LeetCode focusing on data structures & graph algorithms.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- SECTION 07: CURRENTLY BUILDING -->
+          <div id="currently-building" class="building-col">
+            <div class="badge-pill">
+              <span class="dot-blue">●</span> ACTIVE EXPLORATION
+            </div>
+            <h3 class="sub-heading-title">CURRENTLY BUILDING</h3>
+            <p class="building-quote">"Learning how systems behave when everything goes wrong."</p>
+            <div class="building-tags">
+              <span class="b-tag">DATABASES</span>
+              <span class="b-tag">NETWORKING</span>
+              <span class="b-tag">OPERATING SYSTEMS</span>
+              <span class="b-tag">DISTRIBUTED SYSTEMS</span>
+              <span class="b-tag">ALGORITHMS</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 08: ABOUT -->
+      <section id="about" class="about-section studio-style">
+        <div class="about-container">
+          <div class="badge-pill">
+            <span class="dot-blue">●</span> ABOUT THE ENGINEER
+          </div>
+
+          <div class="about-main-text">
+            <p class="about-p">
+              "I'm Shifa, a computer science student interested in what happens underneath the abstraction."
+            </p>
+            <p class="about-p">
+              "I like building systems from the ground up, whether that's a database engine, a distributed search service, or an AI system that investigates why another system broke."
+            </p>
+            <p class="about-p highlight-p">
+              "Currently exploring backend engineering, databases, distributed systems, and algorithms."
+            </p>
+          </div>
+
+          <div class="edu-card">
+            <span class="edu-degree">B.Sc. (Hons.) in Computer Science</span>
+            <span class="edu-school">BITS Pilani • CGPA: 8.23</span>
+            <span class="edu-timeline">2024 – Present</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 09: CONTACT -->
+      <section id="contact" class="contact-section">
+        <div class="contact-container">
+          <div class="contact-header">
+            <div class="contact-header-top">
+              <h2 class="contact-title-top">HAVE A SYSTEM</h2>
+              <div class="contact-badge-card">
+                <span class="badge-tag">ENGINEERING INQUIRIES</span>
+                <p class="badge-text">Interested in backend systems, distributed architecture, or algorithms? Reach out directly.</p>
+              </div>
+            </div>
+
+            <div class="contact-header-bottom">
+              <span class="contact-word-grow">TO BREAK?</span>
+              <h3 class="contact-title-right">LET'S BUILD<br />TOGETHER</h3>
+            </div>
+          </div>
+
+          <!-- Contact Details Grid -->
+          <div class="contact-links-grid">
+            <a href="mailto:3639shifa@gmail.com" class="contact-link-card">
+              <span class="link-label">EMAIL</span>
+              <span class="link-value">3639shifa@gmail.com</span>
+              <span class="link-arrow">↗</span>
+            </a>
+
+            <a href="https://github.com/Ctrl-apk" target="_blank" rel="noopener" class="contact-link-card">
+              <span class="link-label">GITHUB</span>
+              <span class="link-value">github.com/Ctrl-apk</span>
+              <span class="link-arrow">↗</span>
+            </a>
+
+            <a href="https://linkedin.com/in/shifa6250" target="_blank" rel="noopener" class="contact-link-card">
+              <span class="link-label">LINKEDIN</span>
+              <span class="link-value">linkedin.com/in/shifa6250</span>
+              <span class="link-arrow">↗</span>
+            </a>
+
+            <a href="https://leetcode.com/u/3639shifa/" target="_blank" rel="noopener" class="contact-link-card">
+              <span class="link-label">LEETCODE</span>
+              <span class="link-value">leetcode.com/u/3639shifa</span>
+              <span class="link-arrow">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Minimalist Footer -->
+      <footer class="footer">
+        <div class="footer-inner">
+          <span class="footer-copy">&copy; 2026 Shifa M. All rights reserved.</span>
+          <a href="#hero" class="footer-back-top">Back to top ↑</a>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+  <script src="script.js?v=5"></script>
+</body>
+</html>

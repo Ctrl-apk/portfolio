@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Engineering Projects — Shifa M</title>
+  <meta name="description" content="Detailed engineering case studies for ForgeDB, Search Typeahead System, and AI Incident Investigator by Shifa M." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css?v=6" />
+</head>
+<body class="projects-page">
+
+  <!-- Navigation Bar -->
+  <header class="header scrolled">
+    <div class="header-container">
+      <a href="index.html" class="logo">SHIFA M</a>
+      
+      <nav class="nav-links">
+        <a href="index.html#hero" class="nav-link">HOME</a>
+        <a href="index.html#what-i-build" class="nav-link">WORK</a>
+        <a href="index.html#stack" class="nav-link">STACK</a>
+        <a href="projects.html" class="nav-link active">PROJECTS</a>
+        <a href="index.html#about" class="nav-link">ABOUT</a>
+        <a href="index.html#contact" class="nav-link">CONTACT</a>
+        <a href="https://github.com/Ctrl-apk" target="_blank" rel="noopener" class="nav-link">GITHUB ↗</a>
+      </nav>
+
+      <a href="index.html#contact" class="btn-pill-white">
+        <span>Get in touch</span>
+        <span class="btn-arrow-circle">
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
+            <path d="M2.5 6H9.5M9.5 6L6 2.5M9.5 6L6 9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Projects Main Content Wrapper -->
+  <main class="projects-content-wrapper">
+    <!-- Projects Page Hero -->
+    <section class="projects-hero-section">
+      <div class="projects-hero-container">
+        <div class="badge-pill">
+          <span class="dot-blue">●</span> ENGINEERING CASE STUDIES
+        </div>
+        <h1 class="projects-page-title">Systems & Backend Projects</h1>
+        <p class="projects-page-desc">
+          Deep-dive technical breakdown of database engines, distributed caching infrastructure, and AI-powered investigation tools.
+        </p>
+      </div>
+    </section>
+
+    <!-- Project 01: FORGEDB -->
+    <section class="project-detail-section">
+      <div class="project-detail-container">
+        <div class="project-meta-bar">
+          <span class="project-number">PROJECT 01</span>
+          <span class="project-category">RELATIONAL DATABASE ENGINE</span>
+        </div>
+
+        <div class="case-study-title-block">
+          <h2 class="project-item-title">ForgeDB</h2>
+          <p class="project-item-lead">
+            "Built a relational database engine from scratch, implementing disk storage, buffer pool caching, B+ tree indexing, SQL parsing, query execution, and query planning."
+          </p>
+        </div>
+
+        <!-- Narrative Flow -->
+        <div class="architecture-flow-narrative">
+          <span class="flow-step">Storage</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Indexing</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Transactions</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Logging</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">Recovery</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step highlight-step">523 AUTOMATED TESTS</span>
+        </div>
+
+        <div class="project-specs-list">
+          <div class="spec-row">
+            <span class="spec-label">TECHNOLOGIES</span>
+            <span class="spec-value">Java, Maven, JUnit 5, B+ Tree, Write-Ahead Logging (WAL)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">TRANSACTION MODEL</span>
+            <span class="spec-value">NO-STEAL, NO-FORCE, REDO-ONLY (BEGIN, COMMIT, ROLLBACK)</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">WAL VALIDATION</span>
+            <span class="spec-value">CRC32 Checksum Validation & PageLSN Tracking</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">CRASH RECOVERY</span>
+            <span class="spec-value">Committed-transaction REDO & Truncation-safe WAL Replay</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">TEST COVERAGE</span>
+            <span class="spec-value">523 Passing Automated Unit & Integration Tests</span>
+          </div>
+        </div>
+
+        <ul class="project-highlights">
+          <li>Implemented disk storage manager and buffer pool page caching to minimize disk I/O operations.</li>
+          <li>Built B+ Tree indexing supporting efficient point lookups and range scans.</li>
+          <li>Implemented AST SQL parser, query planner, and volcano-style iterator query execution engine.</li>
+          <li>Ensured ACID compliance with NO-STEAL/NO-FORCE buffer pool transaction guarantees.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 02: SEARCH TYPEAHEAD SYSTEM -->
+    <section class="project-detail-section">
+      <div class="project-detail-container">
+        <div class="project-meta-bar">
+          <span class="project-number">PROJECT 02</span>
+          <span class="project-category">DISTRIBUTED SEARCH INFRASTRUCTURE</span>
+        </div>
+
+        <div class="case-study-title-block">
+          <h2 class="project-item-title">Search Typeahead System</h2>
+          <p class="project-item-lead">
+            "Built a distributed search typeahead using consistent hashing across 3 cache nodes and 100 virtual nodes for balanced request distribution."
+          </p>
+        </div>
+
+        <!-- Architecture Flow -->
+        <div class="architecture-diagram-card">
+          <div class="arch-diagram-flow">
+            <div class="arch-node">CLIENT REQUEST</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node highlight-ring">HASH RING (100 Virtual Nodes)</div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-nodes-group">
+              <span class="cache-node">CACHE NODE 1</span>
+              <span class="cache-node">CACHE NODE 2</span>
+              <span class="cache-node">CACHE NODE 3</span>
+            </div>
+            <div class="arch-arrow">↓</div>
+            <div class="arch-node db-node">POSTGRESQL (Batched Writes)</div>
+          </div>
+        </div>
+
+        <div class="project-specs-list">
+          <div class="spec-row">
+            <span class="spec-label">TECHNOLOGIES</span>
+            <span class="spec-value">Java, Spring Boot, React, PostgreSQL, Docker</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">HASH RING SCALE</span>
+            <span class="spec-value">3 Cache Nodes & 100 Virtual Nodes</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">TEST DATASET</span>
+            <span class="spec-value">129K-query e-commerce workload</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">WRITE OPTIMIZATION</span>
+            <span class="spec-value">10–50x DB Write Frequency Reduction via Batched Writes</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">LATENCY TARGET</span>
+            <span class="spec-value">Sub-50ms prefix search response time</span>
+          </div>
+        </div>
+
+        <ul class="project-highlights">
+          <li>Distributed key partitioning via consistent hashing with 100 virtual nodes per physical node for hot-key balance.</li>
+          <li>Exponential recency-decay ranking algorithm prioritizing trending query terms.</li>
+          <li>Batched async database write-back reducing PostgreSQL write load by up to 50x.</li>
+          <li>Containerized Docker deployment ready for multi-region microservice scaling.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 03: AI INCIDENT INVESTIGATOR -->
+    <section class="project-detail-section">
+      <div class="project-detail-container">
+        <div class="project-meta-bar">
+          <span class="project-number">PROJECT 03</span>
+          <span class="project-category">AI-POWERED INCIDENT ROOT CAUSE ANALYSIS</span>
+        </div>
+
+        <div class="case-study-title-block">
+          <h2 class="project-item-title">AI Incident Investigator</h2>
+          <p class="project-item-lead">
+            "Built a FastAPI backend that ingests Prometheus metrics, Grafana alert triggers, and system log traces across microservices to isolate incident failure points."
+          </p>
+        </div>
+
+        <!-- Causal Flow -->
+        <div class="architecture-flow-narrative">
+          <span class="flow-step">INCIDENT</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">METRICS + ALERTS + LOGS</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">HYPOTHESIS ENGINE</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">EVIDENCE</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step">ROOT CAUSE</span>
+          <span class="flow-arrow">→</span>
+          <span class="flow-step highlight-step">REMEDIATION</span>
+        </div>
+
+        <div class="project-specs-list">
+          <div class="spec-row">
+            <span class="spec-label">TECHNOLOGIES</span>
+            <span class="spec-value">Python, FastAPI, PostgreSQL, LLM API, Prometheus, Grafana, Docker</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">INGESTION</span>
+            <span class="spec-value">Prometheus time-series metrics & Grafana webhook alerts</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">CORRELATION</span>
+            <span class="spec-value">Async scenario evaluation & confidence-scored failure isolation</span>
+          </div>
+          <div class="spec-row">
+            <span class="spec-label">OUTPUT</span>
+            <span class="spec-value">Causal timelines & actionable JSON remediation steps</span>
+          </div>
+        </div>
+
+        <ul class="project-highlights">
+          <li>Automated ingestion of system metrics, active alert triggers, and distributed log traces.</li>
+          <li>Asynchronous parallel hypothesis scoring engine evaluating failure scenarios.</li>
+          <li>Generates confidence-ranked root cause reports with exact causal timelines and recommended remediation.</li>
+          <li>Docker Compose setup configured for rapid local testing and microservice integration.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimalist Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="footer-copy">&copy; 2026 Shifa M. All rights reserved.</span>
+      <a href="#" class="footer-back-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
